@@ -1,0 +1,203 @@
+Nullával nem osztunk!
+★
+Leírás
+Adott két egész szám.
+Oszd el az első számot a másodikkal, és az eredményt írd ki a képernyőre! De csak akkor végezd el a műveletet, ha a második szám nem 0!
+Ha a második szám 0, akkor írd ki a képernyőre, hogy "Nullával nem osztunk!"
+Ellenőrző adatok
+int first = 1, second = 1;
+elvárt kiírás: 1
+int first = 10, second = 2;
+elvárt kiírás: 5
+int first = 0, second = 1;
+elvárt kiírás: 0
+int first = 10, second = 0;
+elvárt kiírás: Nullával nem osztunk!
+
+
+
+Szám csökkentése, ha…
+★
+Leírás
+Adott egy egész szám.
+Csökkentsd a szám értékét 1-gyel, amennyiben a szám nagyon 0-nál.
+Ha a szám kisebb 0-nál, ne történjen változás.
+Ellenőrző adatok
+int number = 1;
+number elvárt értéke: 0
+int number = 2;
+number elvárt értéke: 1
+int number = 10;
+number elvárt értéke: 9
+int number = 0;
+number elvárt értéke: 0
+int number = -1;
+number elvárt értéke: -1
+
+
+
+
+Negatív vagy sem?
+★
+Leírás
+Adott egy egész szám.
+Határozd meg a számról, hogy az negatív, pozitív vagy nulla-e!
+ha negatív, írd ki a képernyőre, hogy "negatív"
+ha pozitív, akkor azt írd ki, hogy "pozitív"
+ha pedig az értéke pontosan 0, akkor azt, hogy "nulla"
+Ellenőrző adatok
+int number = 42;
+elvárt kiírás: pozitív
+int number = -42;
+elvárt kiírás: negatív
+int number = 0;
+elvárt kiírás: nulla
+
+
+
+Közlekedési lámpa
+★
+Leírás
+Adott egy szöveg, amely egy közlekedési lámpa színét jelképezi.
+Írj programkódot, amely ezt a szöveget vizsgálja, és az értékének megfelelően kiírja a képernyőre az alábbi szövegeket:
+ha a szöveg az, hogy "zöld" - kiírja, hogy "SZABAD"
+ha "sárga", akkor: "LASSÍTS"
+ha "piros", akkor: "MEGÁLLJ"
+minden más esetben ezt írja ki: "NEM TUDOM"
+Ellenőrző adatok
+String light = "zöld";
+elvárt kiírás: SZABAD
+String light = "sárga";
+elvárt kiírás: LASSÍTS
+String light = "piros";
+elvárt kiírás: MEGÁLLJ
+String light = "kiscica";
+elvárt kiírás: NEM TUDOM
+
+
+
+
+Évszakok
+★
+Leírás
+Adott egy szöveg, amely egy hónapot jelöl.
+Írj programkódot, amely megmondja, hogy ez a hónap mely évszakhoz tartozik, és az évszak nevét kiírja a képernyőre.
+téli hónapok: december, január, február
+tavaszi hónapok: március, április, május
+nyári hónapok: június, július, augusztus
+őszi hónapok: szeptember, október, november
+minden más esetben azt írja ki, hogy "nem meghatározható"
+Ellenőrző adatok
+String month = "február";
+elvárt kiírás: tél
+String month = "április";
+elvárt kiírás: tavasz
+String month = "június";
+elvárt kiírás: nyár
+String month = "november";
+elvárt kiírás: ősz
+String month = "kiscica";
+elvárt kiírás: nem meghatározható
+
+
+
+Számok kiírása
+★
+Leírás
+Írd ki a képernyőre a számokat 1-től n-ig!
+n egy pozitív egész szám.
+A kiírás történhet számonként külön sorba, de akár egy sorba is.
+Ellenőrző adatok
+int n = 1;
+elvárt eredmény: csak azt írja ki, hogy 1
+int n = 2;
+elvárt eredmény: kiírja, hogy 1, 2
+int n = 10;
+elvárt eredmény: kiírja, hogy 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+
+
+
+Visszaszámlálás
+★
+Leírás
+Írd ki a képernyőre a számokat n-től 0-ig!
+n egy pozitív egész szám.
+A kiírás történhet számonként külön sorba, de akár egy sorba is.
+Ellenőrző adatok
+int n = 1;
+elvárt eredmény: kiírja, hogy 1, 0
+int n = 2;
+elvárt eredmény: kiírja, hogy 2, 1, 0
+int n = 10;
+elvárt eredmény: kiírja, hogy 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+
+
+
+Faktoriális
+★
+Leírás
+Számítsd ki egy pozitív egész szám faktoriálisát, és az eredményt írd ki a képernyőre!
+
+Faktoriális:
+a számnál kisebb/egyenlő pozitív egész számok szorzata
+például 5 faktoriális = 5 * 4 * 3 * 2 * 1 = 120
+Ellenőrző adatok
+int n = 1;
+faktoriálisa: 1
+int n = 3;
+faktoriálisa: 6
+int n = 5;
+faktoriálisa: 120
+int n = 10;
+faktoriálisa: 3628800
+
+
+
+
+ABC
+★
+Leírás
+Fűzd össze szöveggé az angol ábécé első n betűjét az ‘a’-tól kezdve.
+n egy pozitív egész szám.
+
+Tipp
+char start = 'a';
+char second = (char) (start + 1);
+char third = (char) (second + 1);
+System.out.println(second == 'b');	// true
+System.out.println(third == 'c');	// true
+Ellenőrző adatok
+int n = 1;
+elvárt eredmény: "a"
+int n = 2;
+elvárt eredmény: "ab"
+int n = 5;
+elvárt eredmény: "abcde"
+int n = 26;
+elvárt eredmény: "abcdefghijklmnopqrstuvwxyz"
+
+
+
+
+Tömb szöveggé
+★
+Leírás
+Adott egy egész számokat tartalmazó tömb.
+Írj programkódot, amely szöveggé alakítja ezt a tömböt a következők szerint:
+a szöveg nyitó szögletes zárójellel kezdődik ( [ )
+az elemek vesszővel és szóközzel vannak elválasztva egymástól
+a legutolsó elem után már nincsen sem vessző, sem szóköz
+a szöveget záró szögletes zárójel zárja ( ] )
+üres tömb esetében csak a nyitó és a záró szögletes zárójel van ( [] )
+Ellenőrző adatok
+int[] numbers = new int[0];
+elvárt eredmény: "[]"
+int[] numbers = {1};
+elvárt eredmény: "[1]"
+int[] numbers = {1, 2, 3};
+elvárt eredmény: "[1, 2, 3]"
+int[] numbers = {-33, 66, 42, -13, 54, 89};
+elvárt eredmény: "[-33, 66, 42, -13, 54, 89]"
+
+

@@ -1,4 +1,4 @@
-package hu.progmatic;
+package hu.progmatic.HW_20220302;
 
 public class HW_20220302_3 {
     public static void main(String[] args) {

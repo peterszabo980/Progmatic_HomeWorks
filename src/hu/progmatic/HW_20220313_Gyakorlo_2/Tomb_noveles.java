@@ -27,21 +27,5 @@ public class Tomb_noveles {
             System.out.print(newArray[i] + " ");
         }
 
-   /*
-        ArrayList<String> gyumolcsok = new ArrayList<>();
-        System.out.println("Kérem a gyümölcsök darabszámát!");
-        int darabSzam = scanner.nextInt();
-        scanner.nextLine();
-
-        while (gyumolcsok.size() < darabSzam) {
-            System.out.println("Írj egy gyümölcsöt!");
-            String gyumolcs;
-            gyumolcs = scanner.nextLine();
-            scanner.nextLine();
-            gyumolcsok.add(gyumolcs);
-            System.out.println(gyumolcsok.size() + " gyümölcsöt adtál meg eddig, még " + (darabSzam - gyumolcsok.size()) + " hiányzik a listádról.");
-        }
-        System.out.println("Beírtad a " + darabSzam + "db gyümölcsöt");
- */
     }
 }

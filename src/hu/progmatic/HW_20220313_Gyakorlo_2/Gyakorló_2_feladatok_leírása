@@ -1,0 +1,235 @@
+Medve Csata
+★★
+Leírás
+Két medve csatázik egymással. Mindkét medvenak eltérő életpontja és ereje van. A csata folyamán mindkét medve minden körben sebzi a másikat - mindaddig, amíg az egyikük életereje el nem fogy.
+
+Írj programkódot a medvek csatájáról! A program hirdesse ki a győztes medvet.
+(Az eredmény lehet döntetlen!)
+
+Például:
+első medve életpontja 100, ereje 10
+második medve életpontja 80, ereje 50
+eredmény: a második medve győz
+indoklás:
+1. kör: első medve életpontja 50-re, másodiké 70-re csökken
+2. kör: első medve életpontja 0-ra, másodiké 60-ra csökken
+Ellenőrző adatok
+int hp1 = 100, ap1 = 10;
+int hp2 = 80, ap2 = 50;
+győztes: második medve
+int hp1 = 200, ap1 = 30;
+int hp2 = 200, ap2 = 20;
+győztes: első medve
+int hp1 = 100, ap1 = 30;
+int hp2 = 110, ap2 = 30;
+győztes: második medve
+int hp1 = 150, ap1 = 95;
+int hp2 = 170, ap2 = 75;
+győztes: döntetlen
+
+
+
+
+Szökőév
+★★
+Leírás
+Írj programkódot, amely megállapítja egy évről, hogy az szökőév-e vagy sem.
+
+Szökőév:
+1582-ben vezették be (tehát azelőtti év biztosan nem szökőév)
+azon évek szökőévek, amelyek oszthatóak 4-gyel
+de a 100-zal osztható évek közül csak azok szökőévek, amelyek 400-zal is oszthatóak
+például szökőévek: 1584, 1600, 2004
+például nem szökőévek: 1200, 1800, 1999
+Ellenőrző adatok
+int year = 1584;
+szökőév
+int year = 1600;
+szökőév
+int year = 2004;
+szökőév
+int year = 1200;
+szökőév
+int year = 1580;
+nem szökőév
+int year = 1800;
+nem szökőév
+int year = 1999;
+nem szökőév
+
+
+
+
+Osztószámlálás
+★★
+Leírás
+Írj programkódot, amely megszámolja, hogy egy természetes számnak hány darab osztója van! (Azaz csak a nem negatív egész számokra működjön a programkód, negatív számokra nem kell.)
+
+Például:
+a szám: 1
+megoldás: 1
+a szám: 2
+megoldás: 2 (mert 2 osztói: 1, 2)
+a szám: 10
+megoldás: 4 (mert 10 osztói: 1, 2, 5, 10)
+a szám: 11
+megoldás: 2 (mert 11 osztói: 1, 11)
+a szám: 16
+megoldás: 5 (mert 16 osztói: 1, 2, 4, 8, 16)
+a szám: 25
+megoldás: 3 (mert 25 osztói: 1, 5, 25)
+
+Tipp: az 1-nél nagyobb számoknak két osztójuk biztosan van.
+Ellenőrző adatok
+int number = 1;
+osztók száma: 1
+int number = 2;
+osztók száma: 2 (mert az osztók: 1, 2)
+int number = 10;
+osztók száma: 4 (mert az osztók: 1, 2, 5, 10)
+int number = 11;
+osztók száma: 2 (mert az osztók: 1, 11)
+int number = 16;
+osztók száma: 5 (mert az osztók: 1, 2, 4, 8, 16)
+int number = 25;
+osztók száma: 3 (mert az osztók: 1, 5, 25)
+int number = 30;
+osztók száma: 8 (mert az osztók: 1, 2, 3, 5, 6, 10, 15, 30)
+
+
+
+
+Elem csere
+★★
+Leírás
+Adott egy karaktereket tartalmazó tömb.
+Írj programkódot, amely felcseréli a tömb legelső és legutolsó elemét!
+Ügyelj arra, hogy a tömb akár üres is lehet! (Üres tömb elemeit nem tudod felcserélni.)
+Ellenőrző adatok
+char[] chars = new char[0];
+elvárt eredmény: {}
+char[] chars = {'a'};
+elvárt eredmény: {'a'}
+char[] chars = {'a', 'A'};
+elvárt eredmény: {'A', 'a'}
+char[] chars = {'a', 'A', 'b'};
+elvárt eredmény: {'b', 'A', 'a'}
+char[] chars = {'+', '-', '*', '/', '%'};
+elvárt eredmény: {'%', '-', '*', '/', '+'}
+
+
+
+
+Elem csere, ha…
+★★
+Leírás
+Adott egy egész számokat tartalmazó tömb.
+Írj programkódot, amely felcseréli a tömb első és második elemét, ha…
+a tömbben van legalább két elem, és
+ha az első elem nagyobb a másodiknál
+
+Amennyiben a tömb mérete kisebb 2-nél, vagy az első elem kisebb a másodiknál, ne történjen változás.
+Ellenőrző adatok
+int[] numbers = new int[0];
+elvárt eredmény: {}
+int[] numbers = {1};
+elvárt eredmény: {1}
+int[] numbers = {1, 2};
+elvárt eredmény: {1, 2}
+int[] numbers = {2, 1};
+elvárt eredmény: {1, 2}
+int[] numbers = {2, 1, -4, 3};
+elvárt eredmény: {1, 2, -4, 3}
+
+
+
+
+Tömb növelése
+★★
+Leírás
+Adott egy egész számokat tartalmazó tömb, valamint egy egész szám, amelyet szeretnénk hozzáadni a tömbhöz.
+Írj programkódot, amely módosítja az eredeti tömböt!
+Hozz létre egy új tömböt, amely eggyel nagyobb az eredetinél, majd másold át az eredeti tömb minden elemét az új tömbbe. Végül add hozzá az új elemet is.
+
+Elvárás, hogy az új tömb tartalmazza az eredeti tömb minden elemét, méghozzá az eredeti sorrendben, valamint tartalmazza az új elemet is.
+
+A tömb másolására létezik a Java-ban egyszerű megoldás. De most ne használd! Írd meg magad a tömb másolásának műveletét!
+Ellenőrző adatok
+int[] numbers = {};
+int newElement = 1;
+elvárt eredmény: {1}
+int[] numbers = {1};
+int newElement = 2;
+elvárt eredmény: {1, 2}
+int[] numbers = {1, 2};
+int newElement = 10;
+elvárt eredmény: {1, 2, 10}
+int[] numbers = {-33, 66, 42, -13, 54, 89};
+int newElement = 0;
+elvárt eredmény: {-33, 66, 42, -13, 54, 89, 0}
+
+
+
+
+Prímszám
+★★
+Leírás
+Írj programkódot, amely megállapítja egy egész számról, hogy az prímszám-e vagy sem.
+
+Prímszám:
+természetes szám - azaz nem negatív egész szám
+pontosan két osztója van: 1 és önmaga
+például prímszámok: 2, 3, 11, 31
+például nem prímszámok: 1, 4, 25
+Ellenőrző adatok
+int number = 0;
+nem prímszám
+int number = 1;
+nem prímszám
+int number = 2;
+prímszám
+int number = 3;
+prímszám
+int number = 4;
+nem prímszám
+int number = 11;
+prímszám
+int number = 25;
+nem prímszám
+int number = 2147483647;
+prímszám
+
+
+
+
+Legnagyobb közös osztó
+★★
+Leírás
+Írj programkódot, amely kiszámítja két szám legnagyobb közös osztóját!
+
+Két szám legnagyobb közös osztója:
+a legnagyobb szám azon számok közül, amelyek mindkét számmal oszthatóak
+például:
+1 és 7 legnagyobb közös osztója: 1
+és ez az egyetlen közös osztójuk is
+8 és 16 legnagyobb közös osztója: 8
+mert a közös osztóik növekvő sorrendben: 1, 2, 4, 8
+225 és 360 legnagyobb közös osztója: 45
+mert a közös osztóik növekvő sorrendben: 1, 3, 5, 9, 15, 45
+
+Tipp: két szám legnagyobb közös osztója nem lehet nagyobb a két szám közül a kisebbnél.
+Ellenőrző adatok
+int n1 = 1, n2 = 7;
+legnagyobb közös osztó: 1
+int n1 = 16, n2 = 9;
+legnagyobb közös osztó: 1
+int n1 = 12, n2 = 48;
+legnagyobb közös osztó: 12
+int n1 = 102, n2 = 102;
+legnagyobb közös osztó: 102
+int n1 = 225, n2 = 360;
+legnagyobb közös osztó: 45
+int n1 = 5432, n2 = 2345;
+legnagyobb közös osztó: 7
+
+

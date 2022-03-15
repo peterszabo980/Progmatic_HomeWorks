@@ -1,0 +1,136 @@
+Számjegyösszegző
+★★★
+Leírás
+Adott egy egész szám.
+Írj programkódot, amely összeadja a szám számjegyeit!
+Ellenőrző adatok
+int number = 1;
+számjegyek összege: 1
+int number = 2;
+számjegyek összege: 2
+int number = -1;
+számjegyek összege: 1 - Ez itt inkább 0?
+int number = 12;
+számjegyek összege: 3
+int number = -5483229;
+számjegyek összege: 33 - Ez itt inkább 32?
+
+
+
+Hatványozás
+★★★
+Leírás
+Adott két nemnegatív egész szám: az első az alap, a második a kitevő.
+Írj programkódot, amely az alapot hatványozza az adott kitevőre!
+Ne használj olyan eszközt, amely elérhető a Java-ban!
+Ellenőrző adatok
+int base = 0, exponent = 0;
+elvárt eredmény: 1
+int base = 2, exponent = 0;
+elvárt eredmény: 1
+int base = 2, exponent = 1;
+elvárt eredmény: 2
+int base = 2, exponent = 3;
+elvárt eredmény: 8
+int base = 5, exponent = 3;
+elvárt eredmény: 125
+int base = 7, exponent = 5;
+elvárt eredmény: 16807
+
+
+
+
+Minimumkeresés
+★★★
+Leírás
+Adott egy egész számokat tartalmazó tömb.
+Írj programkódot, amely megkeresi a tömb legkisebb elemét!
+Ellenőrző adatok
+int[] numbers = {1};
+maximum érték: 1
+int[] numbers = {1, 2};
+maximum érték: 1
+int[] numbers = {1, -2};
+maximum érték: -2
+int[] numbers = {-2, 1, -6, 10};
+maximum érték: -6
+int[] numbers = {-104, -442, -422, -66, -333, -103, -89, -66, -501, -316, -114};
+maximum érték: -501
+
+
+
+Maximumkeresés
+★★★
+Leírás
+Adott egy egész számokat tartalmazó tömb.
+Írj programkódot, amely megkeresi a tömb legnagyobb elemét!
+Ellenőrző adatok
+int[] numbers = {1};
+maximum érték: 1
+int[] numbers = {1, 2};
+maximum érték: 2
+int[] numbers = {1, -2};
+maximum érték: 1
+int[] numbers = {-2, 1, -6, 10};
+maximum érték: 10
+int[] numbers = {-104, -442, -422, -66, -333, -103, -89, -66, -501, -316, -114};
+maximum érték: -66
+
+
+
+
+Konvertálás
+★★★
+Leírás
+Adott egy egész számokat tartalmazó tömb.
+Alakítsd át a tömb elemeit String-ekké, és tárold őket egy String típusú (új) tömbben!
+Ellenőrző adatok
+int[] numbers = new int[0];
+String tömb értéke: {}
+int[] numbers = {1};
+String tömb értéke: {"1"}
+int[] numbers = {1, 2, 3};
+String tömb értéke: {"1", "2", "3"}
+int[] numbers = {-2, 1, -6, 10};
+maximum érték: {"-2", "1", "-6", "10"}
+
+
+
+
+Tükörtömb
+★★★
+Leírás
+Adott egy egész számokat tartalmazó tömb.
+Írj programkódot, amely megállapítja, hogy ez a tömb úgynevezett “tükörtömb”-e vagy sem.
+
+Tükörtömb:
+az a tömb, amely visszafelé olvasva is ugyanaz, mint rendesen olvasva
+például tükörtömb:
+[1, 2, 3, 2, 1]
+[1, 2, 3, 3, 2, 1]
+nem tükörtömb azonban:
+[1, 2]
+[1, 4, 1, 1]
+
+A 0 hosszúságú tömbök sem minősülnek tükörtömbnek.
+Ellenőrző adatok
+int[] numbers = new int[0];
+nem tükörtömb
+int[] numbers = new int[7];
+tükörtömb
+int[] numbers = {1};
+tükörtömb
+int[] numbers = {1, 1};
+tükörtömb
+int[] numbers = {1, 1, 2};
+nem tükörtömb
+int[] numbers = {1, 2, 1};
+tükörtömb
+int[] numbers = {1, 2, -1};
+nem tükörtömb
+int[] numbers = {1, 2, 2, 3, 5, 5, 4, 3, 2, 2, 1};
+nem tükörtömb
+int[] numbers = {1, 2, 2, 3, 4, 5, 5, 4, 3, 2, 2, 1};
+tükörtömb
+
+

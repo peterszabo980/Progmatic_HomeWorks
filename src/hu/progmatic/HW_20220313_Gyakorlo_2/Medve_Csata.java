@@ -9,14 +9,14 @@ public class Medve_Csata {
         System.out.println("-----------------------------------------------------");
         System.out.println("Két medve csatázik egymással. Mindkét medvenak eltérő " +
                 "életpontja és ereje van. A csata folyamán mindkét medve minden " +
-                "körben sebzi a másikat - mindaddig, amíg az egyikük életereje el nem" +
+                "körben sebzi a másikat - mindaddig, amíg az egyikük életpontja el nem" +
                 " fogy.");
         System.out.println("Xergej medve életpontja 100 és életereje 100 egység.");
         System.out.println("Vlagyi medve életpontja 100 és életereje 100 egység.");
         int Xhp = 100;
-        int Xap = 50;
+        int Xap = 100;
         int Vhp = 100;
-        int Vap = 50;
+        int Vap = 100;
         System.out.println("-----------------------------------------------------");
         String finish;
 

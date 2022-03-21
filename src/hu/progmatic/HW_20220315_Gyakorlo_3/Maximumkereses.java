@@ -1,4 +1,4 @@
-package hu.progmatic.HW_Gyakorlo_3;
+package hu.progmatic.HW_20220315_Gyakorlo_3;
 
 public class Maximumkereses {
     public static void main(String[] args) {

@@ -1,0 +1,171 @@
+Random tömb
+★★★★
+Leírás
+Generálj egy olyan 100 elemű, egész szám típusú tömböt, amelyben a számok 1-től 100-ig szerepelnek (beleértve a két szélső értéket), méghozzá véletlenszerű sorrendben!
+
+Elvárás, hogy a tömbben 1-től 100-ig minden szám szerepeljen, és ne legyen ismétlődés.
+Továbbá az is elvárás, hogy a programkód minden egyes futtatásakor a számok más sorrendben legyenek a tömbben. (Nyilván van rá matematikai esély, hogy többszöri futtatáskor a számok ugyanabban a sorrendben lesznek…)
+
+Tipp
+Először kisebb tömbbel próbáld meg megoldani a feladatot! (Például csak 10 elemű legyen, és a számok 1-től 10-ig szerepeljenek benne.) Így könnyebb ellenőrizni a megoldás helyességét.
+Segítség
+Véletlen szám generálására használható a Math.random()
+Például:
+double d = Math.random();                           // 0.0 <= d && d < 1.0
+int r1 = (int) (Math.random() * 5);                  // 0 <= r1 && r1 < 5
+int r2 = (int) (Math.random() * 5 + 1);            // 1 <= r2 && r2 <= 5)
+int r3 = (int) (Math.random() * 101 + 100);    // 100 <= r3 && r3 <= 200
+
+További segítség:
+https://www.geeksforgeeks.org/java-math-random-method-examples/
+
+
+
+
+Szám osztói
+★★★★
+Leírás
+Adott egy természetes (nemnegatív egész) szám.
+Írj programkódot, amely megkeresi a szám összes osztóját, és tömbben tárolja azt!
+Ellenőrző adatok
+int number = 0;
+elvárt eredmény: {}
+(azaz 0 hosszúságú tömb)
+int number = 1;
+elvárt eredmény: {1}
+int number = 2;
+elvárt eredmény: {1, 2}
+int number = 10;
+elvárt eredmény: {1, 2, 5, 10}
+int number = 16;
+elvárt eredmény: {1, 2, 4, 8, 16}
+int number = 2147483647;
+elvárt eredmény: {1, 2147483647}
+
+
+
+
+Tömb számjegyei
+★★★★★
+Leírás
+Adott egy egész számokat tartalmazó tömb.
+Írj programkódot, amely megszámolja, hogy a tömb összes eleme melyik számjegyet hányszor tartalmazza!
+A számjegyek darabszámát tárold valamiféleképpen!
+Ellenőrző adatok
+long[] numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+mindegyik számjegy egyszer szerepel
+long[] numbers = {9876543210L};
+mindegyik számjegy egyszer szerepel
+long[] numbers = {-42, 66, 33, 42, -69};
+egyszer sem szerepelnek: 0, 1, 5, 7, 8
+egyszer szerepel: 9
+kétszer szerepel: 2, 3, 4
+háromszor szerepel: 6
+long[] numbers = {-1526446364, 1874047238, 1064541050, -815818089, 467498070, -1427103238, 1267273266, -1248819505, 839131004, -1313719080, 1545523494};
+0 tizenháromszor
+1 tizenhétszer
+2 kilencszer
+3 tízszer
+4 tizenötször
+5 kilencszer
+6 nyolcszor
+7 nyolcszor
+8 tizenkétszer
+9 hatszor szerepel
+
+
+
+
+Tízes számrendszerből kettesbe
+★★★★★
+Leírás
+Adott egy tízes számrendszerbeli (nemnegatív egész) szám.
+Írj programkódot, amely átváltja ezt a számot tízes számrendszerből kettes számrendszerbe!
+Segítség
+Egy számot tízes számrendszerből kettesbe úgy váltunk át, hogy…
+…a számot addig osztjuk el kettővel, amíg végül nullát nem kapunk, és a kettővel való osztás utáni maradékot felírjuk
+…végül a felírt maradékokat visszafelé olvassuk
+
+Például tízes számrendszerben 10 kettes számrendszerben 1010
+
+
+10 / 2 = 5; maradék: 0
+5 / 2 = 2; maradék:   1
+2 / 2 = 1; maradék:   0
+1 / 2 = 0; maradék:   1
+
+10
+
+
+
+5
+0
+2
+1
+1
+0
+0
+1
+
+
+
+
+
+
+Ellenőrző adatok
+int decimal = 0;
+kettes számrendszerben: 0
+int decimal = 1;
+kettes számrendszerben: 1
+int decimal = 2;
+kettes számrendszerben: 10
+int decimal = 5;
+kettes számrendszerben: 101
+int decimal = 11;
+kettes számrendszerben: 1011
+int decimal = 4242;
+kettes számrendszerben: 1000010010010
+
+
+
+
+Kettes számrendszerből tízesbe
+★★★★★
+Leírás
+Adott egy kettes számrendszerbeli (nemnegatív egész) szám.
+Írj programkódot, amely átváltja ezt a számot kettes számrendszerből tízes számrendszerbe!
+Segítség
+A kettes számrendszerben 0-kkal és 1-esekkel fejezik ki a szám értékét.
+Jobbról balra (visszafelé) haladva a számjegyet meg kell szorozni 2 n-edik hatványával, ahol n kezdőértéke 0, azután 1-gyel növekszik. A szorzások eredményét össze kell adni.
+
+Például kettes számrendszerben 101 tízes számrendszerben 5
+
+1
+0
+1
+= 1 * 22 + 0 * 21 + 1 * 20
+    = 1 * 4 + 0 * 2 + 1 * 1
+        = 4 + 0 + 1
+            = 5
+22
+21
+20
+
+
+További segítség:
+https://hu.wikipedia.org/wiki/Kettes_sz%C3%A1mrendszer
+Ellenőrző adatok
+long binary = 0;
+tízes számrendszerben: 0
+long binary = 1;
+tízes számrendszerben: 1
+long binary = 10;
+tízes számrendszerben: 2
+long binary = 101;
+tízes számrendszerben: 5
+long binary = 1000;
+tízes számrendszerben: 8
+long binary = 110010011;
+tízes számrendszerben: 403
+
+

@@ -1,0 +1,74 @@
+Írj metódust, amely visszaadja a bemeneti paraméterként kapott szöveg első szavát!
+A metódus szignatúrája:
+public static String getFirstWord(String text)
+Ellenőrző adatok:
+String text = "";
+	megoldás: ""
+String text = "programozás";
+	megoldás: "programozás"
+String text = "egyszer volt, hol nem";
+	megoldás: "egyszer"
+Tipp:
+.indexOf()
+.substring()
+
+
+Írj metódust, amely visszaadja a bemeneti paraméterként kapott szöveg utolsó szavát!
+A metódus szignatúrája:
+public static String getLastWord(String text)
+Ellenőrző adatok:
+String text = "";
+	megoldás: ""
+String text = "programozás";
+	megoldás: "programozás"
+String text = "egyszer volt, hol nem";
+	megoldás: "nem"
+Tipp:
+.lastIndexOf()
+.substring()
+
+
+Írj metódust, amely megszámolja, hogy a bemeneti paraméterként kapott szövegben hányszor fordul elő egy adott karakter. (A metódus a karaktert szintén bemeneti paraméterként kapja.)
+A metódus szignatúrája:
+public static int countCharInString(String text, char c)
+Ellenőrző adatok:
+String text = ""; char c = 'a';
+	megoldás: 0
+String text = "Arról"; char c = 'a';
+	megoldás: 0
+String text = "kiscica"; char c = 'i';
+	megoldás: 2
+String text = "*****"; char c = '*';
+	megoldás: 5
+Tipp:
+.charAt()
+
+
+Írj metódust, amely ellenőrzi, hogy két szövegben ugyanazok a szavak szerepelnek-e a szavak előtti és utáni felesleges szóközök nélkül.
+A metódus szignatúrája:
+public static boolean equalsWithoutWhitespaces(String text1, String text2)
+Ellenőrző adatok:
+String text1 = "a", text2 = "a";
+	megoldás: true
+String text1 = "    a", text2 = "a     ";
+	megoldás: true
+String text1 = "    bab  ", text2 = "   baba ";
+	megoldás: false
+Tipp:
+.trim()
+
+
+Írj metódust, amely a bemeneti paraméterként kapott szöveget szétbontja külön szövegekre adott karaktersorozatnál, és visszaadja az így kapott szövegek közül a leghosszabbat. (A karaktersorozatot is bemeneti paraméterként kapja.)
+A metódus szignatúrája:
+public static String getLongestTextAfterSplit(String text, String splitAt)
+Ellenőrző adatok:
+String text = "alma,barack,dinnye-cseresznye,eper-málna-körte,szőlő", splitAt = " ";
+	megoldás: "alma,barack,dinnye-cseresznye,eper-málna-körte,szőlő"
+String text = "alma,barack,dinnye-cseresznye,eper-málna-körte,szőlő", splitAt = ",";
+	megoldás: "dinnye-cseresznye"
+String text = "alma,barack,dinnye-cseresznye,eper-málna-körte,szőlő", splitAt = "-";
+	megoldás: "alma,barack,dinnye"
+Tipp:
+.split()
+
+

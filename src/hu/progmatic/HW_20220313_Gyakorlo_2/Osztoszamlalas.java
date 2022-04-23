@@ -14,7 +14,7 @@ public class Osztoszamlalas {
         while (oszto <= szam) {
             if (szam % oszto == 0) {
                 db ++;
-                System.out.println("A szám osztója: " + oszto);
+
             }
             oszto ++;
         }

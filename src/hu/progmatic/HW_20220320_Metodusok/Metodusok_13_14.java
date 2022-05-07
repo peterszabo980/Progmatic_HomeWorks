@@ -1,4 +1,4 @@
-package hu.progmatic.HW_20220320;
+package hu.progmatic.HW_20220320_Metodusok;
 
 public class Metodusok_13_14 {
     public static void main(String[] args) {

@@ -1,0 +1,106 @@
+Sakktábla
+★★★★★
+Leírás
+Készítsd el egy sakktábla rajzát! Az eredményt tárold String adattípusú változóban.
+A sakktábla fehér és fekete mezőit jelenítsd meg szabadon választott, de különböző karakterekkel. (Például a fehér lehet 0, a fekete pedig lehet 1.)
+Jelenítsd meg továbbá a mezők betűjeleit (A - H), valamint a számukat (1 - 8).
+Az eredmény a képernyőre kiírva például így nézzen ki:
+// fehér 0; fekete 1
+        A B C D E F G H
+        ---------------
+    8 | 0 1 0 1 0 1 0 1
+    7 | 1 0 1 0 1 0 1 0
+    6 | 0 1 0 1 0 1 0 1
+    5 | 1 0 1 0 1 0 1 0
+    4 | 0 1 0 1 0 1 0 1
+    3 | 1 0 1 0 1 0 1 0
+    2 | 0 1 0 1 0 1 0 1
+    1 | 1 0 1 0 1 0 1 0
+
+Ügyelj arra, hogy a sakktábla bal felső sarka az A8-as mező (fehér), a jobb alsó pedig a H1 (fehér)!
+Generáld a sakktáblát! Ne csak annyi legyen a kód, hogy
+String table = “0 1 0 1 0 1 0 1\n” +
+1 0 1 0 1 0 1 0\n” + …
+
+
+
+
+Almaszüret
+★★★★★
+Leírás
+A kertemben van egy hosszú almafa-sor, és közeleg a szüret ideje.
+Tudom, hogy melyik fán mennyi termés van (mivel egy kismadár megsúgta), és szeretném a lehető legtöbb almát leszedni. Azonban csak korlátozottan tudok szüretelni…
+A korlátaimat ezek a tények jelentik:
+csak bizonyos számú fáról tudok almát szedni, és
+csak az egymás mellett lévő fákról szedhetek
+csak előrefelé haladhatok (tehát az almafa-sorom elejéről kezdhetek), és visszafelé nem szedhetek (tehát az almafa-sorom végéről előrefelé nem szedhetek)
+
+Az almafáim termését egy tömb tartalmazza. Például:
+int[] apples = {48, 63, 36, 51, 44};
+Ez azt jelenti, hogy az első fámon 48 darab alma van, a másodikon 63 stb.
+Azt, hogy hány egymás mellett álló fáról tudok termést szedni, egy egész szám típusú változó tartalmazza. Például:
+int pick = 3;
+
+Írj programkódot, amely kiszámolja, hogy hányadik fáról kell elkezdenem a szüretelést, hogy a lehető legtöbb almát szedjem le! (Ha esetleg több fáról is kezdhetném, akkor az előbb lévő fa legyen az eredmény.)
+
+A fenti példánál a megoldás: 2 (azaz a második fámról kell kezdenem a szüretet).
+Indoklás:
+ha az első fáról kezdek szedni, akkor a leszedett gyümölcsök száma:
+48 + 63 + 36 = 147
+ha a második fáról kezdek szedni, akkor a leszedett gyümölcsök száma:
+63 + 36 + 51 = 150
+ha a harmadik fáról kezdek szedni, akkor a leszedett gyümölcsök száma:
+36 + 51 + 44 = 131
+a negyedik és az ötödik fáról már nem érdemes kezdenem, hiszen 3 fáról tudok szedni, és összesen 5 fám van
+Ellenőrző adatok
+int[] apples = {24, 39};
+int pick = 2;
+hányadik almafa: 1
+int[] apples = {24, 39};
+int pick = 4;
+hányadik almafa: 1
+(4 fáról tudnék szedni, de csak 2 fám van - ezért erről a kettőről szedem)
+int[] apples = {24, 39, 24};
+int pick = 2;
+hányadik almafa: 1
+(az 1. és a 2. fáról is kezdhetném, de az 1. előbb van, mint a 2.)
+int[] apples = {21, 53, 74};
+int pick = 2;
+hányadik almafa: 2
+int[] apples = {20, 34, 32, 32, 65, 25};
+int pick = 3;
+hányadik almafa: 3
+int[] apples = {44, 42, 76, 55, 48, 48, 64, 44, 78, 72, 26, 26};
+int pick = 4;
+hányadik almafa: 7
+
+
+
+
+Nagyon nagy számok összege
+★★★★★
+Leírás
+A long adattípus maximális értéke lehet: 9223372036854775807
+
+Írj programkódot, amely akár ennél nagyobb számokat is képes összeadni!
+
+Gondold végig:
+Milyen adattípusú változóként tudsz tárolni ilyen nagy számokat?
+És hogyan tudod összeadni őket?
+
+Megjegyzés: az alábbi ellenőrző adatok között van olyan nagy szám, amelyet a long adattípus tényleg nem képes tárolni.
+Ellenőrző adatok
+n1 = 0, n2 = 0
+összeadás eredménye: 0
+n1 = 1, n2 = 1
+összeadás eredménye: 1
+n1 = 11, n2 = 1
+összeadás eredménye: 12
+n1 = 2147495992, n2 = 2147483647
+összeadás eredménye: 4294979639
+n1 = 25769803764, n2 = 9223372036854775
+összeadás eredménye: 9223397806658539
+n1 = 19223372036854775807, n2 = 9223372036854775817
+összeadás eredménye: 28446744073709551624
+
+

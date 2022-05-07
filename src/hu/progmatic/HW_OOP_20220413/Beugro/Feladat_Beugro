@@ -1,0 +1,49 @@
+Könyvek és szerzők
+1. Hozz létre egy új projektet, vagy akár használd egy már meglévő projektedet.
+2. Készíts egy models nevű package-et, azon belül pedig hozz létre egy Book nevű osztályt!
+3. A Book osztályodban hozd létre az alábbi fieldeket (osztályváltozókat):
+String author
+String title
+int published
+String genre
+4. A fenti fieldek legyenek mind private-ok!
+5. Ugyancsak a Book osztályodban írj egy default konstruktort (bemeneti paraméter nélküli, „üres” konstruktort).
+6. Írj egy olyan konstruktort is, amely a fenti fieldek mindegyikének értéket ad. (Tehát bemeneti paraméterként kapja a szerző nevét, a könyv címét, kiadási évét és műfaját.)
+7. Hozz létre gettereket és settereket is az összes fieldre!
+8. Írj metódust, amely kiírja a könyv minden adatát!
+Például: public void printInfo()
+9. Megvalósítható vajon a fenti metódus másképpen is? Próbáld meg!
+Tipp: https://www.geeksforgeeks.org/object-tostring-method-in-java/
+10. Hozz létre egy új osztályt Main néven (a models package-en kívül), és írd meg a main() metódust!
+11. A main() metódusban példányosíts egy Book típusú objektumot a bemeneti paraméter nélküli („üres”) konstruktorral.
+12. Adj értéket a Book típusú objektumod minden fieldjének a megfelelő setter metódusok használatával. Ezután írd ki a képernyőre a könyv minden adatát.
+13. Példányosíts egy új Book típusú objektumot, de ezúttal használd a bemeneti paraméterrel rendelkező konstruktorát!
+14. Írd ki a képernyőre az előbb példányosított Book típusú objektum minden adatát!
+15.Hozz létre egy új osztályt a models package-ben Author néven!
+16. Az Author osztályban a következő fieldek legyenek:
+String name
+String country
+int birthYear
+17. Ezek a fieldek is legyenek mind private-ok!
+18. Írd meg az Author osztály default (bemeneti paraméter nélküli) és bemeneti paraméterekkel rendelkező konstruktorát is!
+19. Hozd létre a gettereket és a settereket az osztály fieldjeihez!
+
+20. Módosítsd úgy a Book osztály author nevű fieldjét, hogy az egy Author típusú objektum legyen!
+eredetileg: String author
+módosítva: Author author
+21. Ennek megfelelően módosítsd a konstruktort, a gettert és a settert is, ami ehhez a fieldhez tartozik!
+(A getter visszatérési értéke Author lesz. A setter bemeneti paramétere pedig Author adattípusú.)
+22. Módosítsd a 8. és/vagy 9. feladatban megvalósított metódust is (amelyben a könyv minden adatát kiírod). Írd ki benne a szerző összes adatát is! (Azaz a nevét, az országát és a születési évét.)
+
+23. Módosítsd a Main osztály main() metódusában lévő könyv-példányosítást is!
+Mivel a Book objektumok létrehozásához már szükséges egy Author típusú objektum is, ezért hozz létre a könyvek példányosítása előtt egy-egy Author típusú objektumot is! (Ehhez használhatod a bemeneti paraméterekkel rendelkező konstruktort.)
+// például:
+Author author = new Author("Mézga Géza", "Magyarország", 1968);
+24. Írd át a már létrehozott könyv-példányaidat! Állítsd be, hogy a szerzőjük az az Author típusú objektum legyen, amit előtte létrehoztál.
+25. Futtasd a programot! Írd ki a képernyőre a könyvek minden adatát (a szerzők minden adatával együtt).
+
+26. Hozz létre több különböző könyvet ugyanazzal a szerzővel! És közben gondolkozz el, mit és miért írtál, és hogyan tudod használni a különböző objektumaidat!
+Például: Van kapcsolat a szerző és a könyv között? Milyen? Hogyan nyilvánul meg? Mennyiben lenne más, ha a szerző egy egyszerű String maradt volna a Book osztályban? (És így tovább.)
+
+27. (Bónusz) Ha mindez kész, írj olyan osztályt a fentiek példájára, amely nem könyveket reprezentál, hanem más “entitásokat” - például zeneszámokat, filmeket, ételeket stb. A lényeg, hogy gyakorold az osztályok készítését,
+a fieldek, konstruktorok, getterek és setterek kezelését, valamint az osztályok példányosítását!

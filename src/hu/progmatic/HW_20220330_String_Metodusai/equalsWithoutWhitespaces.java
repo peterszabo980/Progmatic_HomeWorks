@@ -1,4 +1,4 @@
-package hu.progmatic.HW_20220417_String_Metodusai;
+package hu.progmatic.HW_20220330_String_Metodusai;
 
 import java.util.Scanner;
 

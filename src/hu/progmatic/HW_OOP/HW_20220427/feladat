@@ -1,0 +1,33 @@
+Öröklődés
+
+Szeretnék egy bevásárló-alkalmazást készíteni.
+Az alkalmazásban létrehozok egy élelmiszerboltot, és szimulálom egy vásárló bevásárlását.
+
+
+Órai munka
+https://github.com/iloinen/ShopApp
+
+
+Elvárás
+
+Fork-old a fenti linken található repository-t, és folytasd ezt a projektet!
+Vagy készíts új (saját) projektet, és készítsd el az elejétől kezdve önállóan! (Ajánlott ez a megoldás.)
+
+Elvárás, hogy a program tartalmazzon öröklődést, és legyen legalább 5 különböző termék a bolt kínálatában! (A fenti projektben a Bread és a Milk már megvan.)
+Legyen mindegyik különböző terméknek olyan tulajdonsága, amely a többinek nincs! (Például amilyen a Milk zsírtartalma; vagy sörnek alkoholtartalom stb.)
+
+Legyen külön osztálya a vásárlónak is, amely az élelmiszerektől teljesen független!
+
+Nem elvárás, hogy a bevásárlás folyamatát leprogramozd. Koncentrálj az osztályok létrehozására és kezelésére, valamint az öröklődésre!
+
+—
+
+A megvalósítás lehetséges lépései:
+élelmiszerek (osztályok) létrehozása
+vásárló osztályának létrehozása
+élelmiszerek “csoportosítása” - öröklődés
+emiatt az eddigiek átírása szükséges: refaktorálás
+a vásárló “vásárlási logikájának” megvalósítása (és kipróbálása) - nem kötelező
+élelmiszerbolt (osztály) elkészítése és a bevásárlás folyamatának megvalósítása - nem kötelező
+élelmiszerek további “csoportosítása” - a program felépítésének finomítása (például: lánc-öröklődés)
+

@@ -23,7 +23,7 @@ public class main {
 
         mg.printInfo();
         //System.out.println(fh451.getAuthor() + " " + fh451.getTitle() + " " + fh451.getPublished() + " " + fh451.getGenre());
-        System.out.println("=====================");
+        System.out.println("===================== ");
         Presenter iron = new Presenter("Iron Mainde", "Angol", 1980);
 
         Music irmd = new Music();

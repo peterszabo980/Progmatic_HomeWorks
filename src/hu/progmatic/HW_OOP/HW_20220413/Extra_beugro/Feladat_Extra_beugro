@@ -1,0 +1,36 @@
+Kávéfőző
+
+Készíts programot, amelyben egy vásárló kávét vehet egy kávéfőző-géptől!
+
+A program megírásánál koncentrálj az objektum-orientáltságra! (A programban a kávéfőzés és -vevés, azaz a program logikája másodlagos kérdés. Fontosabb, hogy az osztályokat jól írd meg!)
+
+A szükséges osztályok és (minimum) fieldek:
+Kávéfőző
+kávéfőzőben lévő vízmennyiség
+kávéfőzőben lévő őrölt kávébab mennyisége
+egy kávé ára
+egy kávéhoz szükséges vízmennyiség
+egy kávéhoz szükséges őrölt kávébab mennyisége
+Vásárló
+rendelkezésre álló pénzösszeg
+esetleg egyéb adat (pl. név)
+
+Amennyiben az osztályok létrehozása után meg akarod írni, hogy a kávéfőző kiszolgálja a vásárlót, akkor a program az alábbi kritériumoknak feleljen meg:
+1. A kávéfőző legalább egyféle kávét tudjon adni, és ennek a kávénak legyen ára.
+2. Továbbá határozd meg azt is, hogy a kávé mennyi vízből és mennyi őrölt kávébabból készül.
+(Ha több kávét is tud főzni a gép, akkor érdemes külön Kávé osztályt is létrehozni.)
+3. A kávé vízből és őrölt kávébabból áll (esetleg másból is) - tehát a kávéfőző akkor tudja csak kiszolgálni a vásárlót, ha van elegendő alapanyag.
+4. Legyen a kávéfőzőnek (legalább) víz- és kávébab-mennyisége. És ügyelj arra, hogy csökkentsd a víz és a kávébab mennyiségét, ha a kávéfőző kiszolgál egy vásárlót.
+5. A vásárlónak legyen valamennyi pénze. Csökkentsd a vásárló pénzét a kávé árával, ha a kávéfőző sikeresen kiszolgálta őt.
+6. Továbbá a vásárló ne tudjon vásárolni, ha nincs elég pénze.
+
+✫✫✫✫✫✫✫✫✫✫✫✫✫✫✫
+
+Elakadás esetén…
+
+Készítettem egy csokoládé-masina programot, amely nagyon hasonló a fent leírtakhoz - csakhogy ebben a vásárló csokoládét vehet egy automatából.
+A programban több csokoládé is elérhető. A program véletlenszerű összeget ad a vásárlónak (az elején), valamint véletlenszerűen pótolja az automata csokoládé-készletét. Továbbá az automata véletlenszerűen el is romlik.
+Ez a program nem szóról-szóra követendő példa, de esetleg segíthet a kávéfőző megalkotásában. Figyeld meg a models package-ben lévő osztályok felépítését!
+
+Elérhető:
+https://github.com/iloinen/ChocoMachine 

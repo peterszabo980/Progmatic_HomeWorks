@@ -1,4 +1,4 @@
-package hu.progmatic.HW_OOP.HW_20220413.tourism;
+package hu.progmatic.HW_OOP.HW_20220421.tourism;
 
         public class Planet {
             private String name;

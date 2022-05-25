@@ -1,0 +1,26 @@
+ Hozzunk létre egy Cargo osztályt
+- final String id
+- String name
+- int unitPrice
+
+toString
+CARGO/001 Víz 1 GFt / liter
+
+Hozzunk létre egy Container osztályt
+- static final String UNIT = "liter"
+- double static taxRate - azért statikus, mert az egész halmazra (class-ra) vonatkozik és azért
+nem final, mert változhat.
+- Cargo cargo - ez már objektum szintű; ez mutatja, hogy mit teszünk bele a konténerbe
+- int x, y, z
+- getVolume -> x * y * z
+- getNetPrice -> volume * cargo.unitPrice
+- getGrossPrice -> net price * (1 + taxRate) // áfa 27% (1 + 27% = 1,27)
+
+toString
+Víz (2 * 2 * 2 = 8 liter -> nettó 8 GFt / bruttó 12 GFt)
+
+App osztály
+- Hozzunk létre 3 konténert.
+- Írjuk ki a konténerek összes bruttó és nettó értékét.
+- Egy heterogén kollekcióhoz adjuk hozzá a "KONTÉNEREK LISTÁJA:" szöveget, valamint a konténereket.
+Írjuk ki a kollekció elemeit.
